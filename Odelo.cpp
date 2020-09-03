@@ -85,6 +85,7 @@ int Odello() {
 		printf("\t 백돌 vs 흑돌\n");
 		mid = clock();
 
+		//현재 코드는 키를 누를 때마다 경과시간이 뜸 -> Thread를 통해 돌리면 실시간으로 시간정보가 바뀜
 		printf("\t  %d vs  %d\t%d초 경과", b_n, w_n, (int)((mid - start) / 1000));
 
 		if (turn % 2 == 0)
